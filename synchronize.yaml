@@ -1,0 +1,12 @@
+---
+
+- name: Synchronize files between local and remote server
+  host: all
+  become: yes
+
+    tasks:
+    - name: Sync files from local to remote
+      synchronize:
+        src: /home/ubuntu/
+        dest: /home/ubuntu/
+        recusive: yes
