@@ -1,7 +1,7 @@
 ---
 
 - name: Install to start  nginx on target server
-  hosts: 172.31.34.32
+  hosts: all
   become: yes
   gather_facts: yes  #include
   
